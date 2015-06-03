@@ -8,7 +8,6 @@
 from BitRead import BitRead
 
 class FLV
-    self.file='o.txt' 
 
     def __init__():
         self.ofile='output/o.txt'
@@ -16,16 +15,16 @@ class FLV
         self.ofd = open(self.ofile,'w')
         self.ifd = open(self.ifile,'r')
         self.bitReader = new BitRead(self.ifd)
-        return True
+
+        self.FLV_HEADER_SIZE    = 9
 
     def getHeader(fd):
-        
+        bytes=readBytes(self.FLV_HEADER_SIZE)
 
 
-
-
-    def readBits(fd,size):
-
+    def readBytes(n):
+        bytes=self.bitReader.readBytes(n)
+        return bytes
 
     def start():
 
